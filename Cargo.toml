@@ -1,8 +1,18 @@
 [package]
-name = "OG-TODO"
+name = "og-todo"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+structopt = "0.3.*"
+serde_json = "1.0"
+
+[dependencies.chrono]
+feature = ["serde"]
+version = "0.4"
+
+[dependencies.serde]
+feature = ["derive"]
+version = "1.0"
